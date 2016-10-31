@@ -1,0 +1,13 @@
+a <- available.packages()  #define a as the list of all available packages of R
+head (rownames(a), 3)  #list first three of all available packages
+
+install.packages('package name')  #install the package
+install.packages(c('package1', 'package2', 'package3'))  #install multiple packages
+
+source('the link of the package')  #get the basic set of the package and may download multiple packages, for example biocLite
+biocLite()  #install the function itself
+biocLite(c('function1', 'function2'))  #install these 2 functions in this package
+
+library(package name)  #load the package into R, do not use quotes here
+
+search()  #list all functions within this package
